@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Everwise 계정·데이터 삭제 / Account &amp; Data Deletion</title>
+<style>
+  :root{--amber:#F6A623;--amber-deep:#E08C0E;--ink:#2D2A26;--muted:#6F6A63;--line:#ECE4D8;--bg:#FBF8F3;--card:#FFFFFF;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Apple SD Gothic Neo","Noto Sans KR",Roboto,sans-serif;line-height:1.7;font-size:16px}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 80px}
+  header{border-bottom:2px solid var(--amber);padding-bottom:18px}
+  .logo{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--amber-deep);font-weight:700}
+  h1{font-size:25px;margin:8px 0 4px;font-weight:800}
+  .meta{color:var(--muted);font-size:14px}
+  .toggle{display:inline-flex;gap:4px;margin:20px 0 8px;background:#F0E8DC;border-radius:999px;padding:4px}
+  .toggle button{border:0;background:transparent;color:var(--muted);font-weight:700;font-size:14px;padding:7px 16px;border-radius:999px;cursor:pointer}
+  .toggle button[aria-selected="true"]{background:var(--amber);color:#fff}
+  section.lang{display:none}
+  section.lang.active{display:block}
+  h2{font-size:18px;margin:28px 0 8px;font-weight:800}
+  h2 .n{color:var(--amber-deep);margin-right:8px}
+  ol{margin:8px 0 8px 2px;padding-left:22px}
+  ul{margin:8px 0 8px 2px;padding-left:20px}
+  li{margin:6px 0}
+  a{color:var(--amber-deep);text-decoration:none;border-bottom:1px solid rgba(224,140,14,.35)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:14px 0}
+  .mail{font-weight:700}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}
+  th,td{text-align:left;border:1px solid var(--line);padding:9px 11px;vertical-align:top}
+  th{background:#F6EFE3}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">Everwise · 에버와이즈</div>
+    <h1>계정·데이터 삭제 안내 · Account &amp; Data Deletion</h1>
+    <div class="meta">앱 / App: <strong>Everwise</strong> · 개발자 / Developer: <strong>신욱중 (Shin Wook-Joong)</strong> · 시행일 / Effective: 2026-06-19</div>
+  </header>
+
+  <div class="toggle" role="tablist" aria-label="Language">
+    <button id="btn-ko" role="tab" aria-selected="true" onclick="setLang('ko')">한국어</button>
+    <button id="btn-en" role="tab" aria-selected="false" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- KOREAN -->
+  <section class="lang active" id="ko" lang="ko">
+    <p>본 페이지는 모바일 앱 <strong>Everwise(에버와이즈)</strong>의 사용자가 자신의 계정과 관련 데이터의 삭제를 요청하는 방법을 안내합니다.</p>
+
+    <h2><span class="n">1</span>계정 삭제를 요청하는 방법</h2>
+    <div class="card">
+      <ol>
+        <li>아래 이메일로 메일을 보냅니다: <a class="mail" href="mailto:kks07150@gmail.com?subject=Everwise%20계정%20삭제%20요청">kks07150@gmail.com</a></li>
+        <li>제목을 <strong>“Everwise 계정 삭제 요청”</strong>으로 적습니다.</li>
+        <li>본문에 <strong>로그인에 사용한 이메일 주소(Google 또는 Kakao 계정)</strong>를 적습니다. 본인 확인에 사용됩니다.</li>
+        <li>요청 접수 후, 영업일 기준 <strong>최대 30일 이내</strong>에 삭제를 완료하고 처리 결과를 회신합니다.</li>
+      </ol>
+      게스트(둘러보기)로만 사용한 경우, 기기에 저장된 데이터는 기기에서 <strong>앱 데이터 삭제 또는 앱 제거</strong>로 직접 지울 수 있습니다.
+    </div>
+
+    <h2><span class="n">2</span>삭제되는 데이터</h2>
+    <ul>
+      <li>계정 식별자(사용자 ID) 및 로그인 연동 정보(이메일)</li>
+      <li>프로필 정보(닉네임, 목표)</li>
+      <li>서버에 저장된 사용자 데이터</li>
+      <li>기기에 저장된 대화 기록(앱 데이터 삭제·앱 제거 시 함께 삭제)</li>
+    </ul>
+
+    <h2><span class="n">3</span>보관될 수 있는 데이터 및 보관 기간</h2>
+    <table>
+      <tr><th>항목</th><th>보관 기간</th></tr>
+      <tr><td>관련 법령상 보관 의무가 있는 거래·결제 기록</td><td>법령에서 정한 기간 동안 보관 후 삭제</td></tr>
+      <tr><td>시스템 백업에 남은 데이터</td><td>최대 90일 이내 완전 삭제</td></tr>
+    </table>
+
+    <h2><span class="n">4</span>계정을 삭제하지 않고 일부 데이터만 삭제</h2>
+    <p>계정을 유지하면서 대화 기록 등 일부 데이터만 삭제하고 싶다면, 기기 내 대화는 앱에서 직접 삭제할 수 있으며, 그 외의 일부 데이터 삭제는 위 이메일로 “일부 데이터 삭제 요청”이라고 적어 요청할 수 있습니다.</p>
+
+    <h2><span class="n">5</span>문의</h2>
+    <p>문의: <a class="mail" href="mailto:kks07150@gmail.com">kks07150@gmail.com</a></p>
+  </section>
+
+  <!-- ENGLISH -->
+  <section class="lang" id="en" lang="en">
+    <p>This page explains how users of the mobile app <strong>Everwise</strong> can request deletion of their account and associated data.</p>
+
+    <h2><span class="n">1</span>How to request account deletion</h2>
+    <div class="card">
+      <ol>
+        <li>Send an email to <a class="mail" href="mailto:kks07150@gmail.com?subject=Everwise%20Account%20Deletion%20Request">kks07150@gmail.com</a>.</li>
+        <li>Use the subject <strong>“Everwise Account Deletion Request”</strong>.</li>
+        <li>In the body, include the <strong>email address you signed in with (Google or Kakao)</strong> for identity verification.</li>
+        <li>We will complete the deletion and reply within <strong>30 business days</strong> of receiving the request.</li>
+      </ol>
+      If you used the app only as a guest, the data stored on your device can be removed directly by <strong>clearing the app's data or uninstalling</strong> the app.
+    </div>
+
+    <h2><span class="n">2</span>Data that will be deleted</h2>
+    <ul>
+      <li>Account identifier (user ID) and linked sign-in info (email)</li>
+      <li>Profile data (nickname, goal)</li>
+      <li>User data stored on our servers</li>
+      <li>Conversation history stored on your device (removed when app data is cleared / app uninstalled)</li>
+    </ul>
+
+    <h2><span class="n">3</span>Data that may be retained, and for how long</h2>
+    <table>
+      <tr><th>Item</th><th>Retention</th></tr>
+      <tr><td>Transaction/payment records required by law</td><td>Kept for the legally required period, then deleted</td></tr>
+      <tr><td>Data remaining in system backups</td><td>Fully deleted within 90 days</td></tr>
+    </table>
+
+    <h2><span class="n">4</span>Deleting some data without deleting your account</h2>
+    <p>To delete only some data (such as conversation history) while keeping your account, on-device conversations can be cleared within the app, and other partial deletions can be requested by emailing us with the note “partial data deletion request.”</p>
+
+    <h2><span class="n">5</span>Contact</h2>
+    <p>Contact: <a class="mail" href="mailto:kks07150@gmail.com">kks07150@gmail.com</a></p>
+  </section>
+
+  <footer>© 2026 Everwise · 신욱중 (Shin Wook-Joong)</footer>
+</div>
+<script>
+  function setLang(l){
+    document.getElementById('ko').classList.toggle('active', l==='ko');
+    document.getElementById('en').classList.toggle('active', l==='en');
+    document.getElementById('btn-ko').setAttribute('aria-selected', l==='ko');
+    document.getElementById('btn-en').setAttribute('aria-selected', l==='en');
+    document.documentElement.lang=l;
+  }
+</script>
+</body>
+</html>
